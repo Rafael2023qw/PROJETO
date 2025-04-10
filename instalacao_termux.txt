@@ -1,0 +1,24 @@
+PASSO A PASSO NO TERMUX:
+
+1. Atualize Termux:
+   pkg update && pkg upgrade -y
+
+2. Instale dependências:
+   pkg install nodejs git -y
+   pkg install unzip -y
+
+3. Descompacte e acesse:
+   cd /sdcard/Download
+   unzip sunjogo_robot_termux.zip
+   cd sunjogo_robot_termux
+
+4. Instale pacotes:
+   npm install
+
+5. Rode os serviços:
+   node server.js
+   (em outro terminal)
+   node robô-monitor.js
+
+Acesse no Chrome:
+http://localhost:3000/sunjogo.html
